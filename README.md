@@ -59,7 +59,7 @@ pubspec.lock fica as informações precisas das versões utilizadas pelo projeto
 __________________________________________________
  Aula 3 - O que é Widget, Principais Widgets e Stateless e Statefull Widgets
 
-CONCLUÍDO:
+CONCLUÍDO: 18/01/2022
 
 flutter create --org com.startdevstudio flutter_curso_iniciantes_widgets
 
@@ -85,13 +85,45 @@ nome = 'Teste 1232222';
 
 Atalho no VS Code: stf
 
-Sucesso na segunda inclusão do FlatButton no home2page.dart
+Sucesso na segunda inclusão do FlatButton na home2page.dart
+
 setState((){ })
 
- __________________________________________________
+ __________________________________________________ 
  Aula 4 - Como funciona o ciclo de vida das páginas no flutter (Stateful) e Navegação
 
-CONCLUÍDO: 
+CONCLUÍDO: 20/01/2022 
+ 
+Obs.: Novamente identifiquei algumas pequenas divergências possivelmente decorrente da diferença na versão do Flutter.
+
+13:25 home_botoes.dart
+class _HomeBotoesState extends State<HomeBotoes> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Navegacao'),
+
+Navegação
+com Navigator, push muito verbosa
+
+28:25 modo meinos  verboso com a navegação nomeada
+
+lib/home_botoes.dart
+class _HomeBotoesState extends State<HomeBotoes> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Navegacao'),
+      ),
+      body: SizedBox(                                      <<< ==== sugerido a troca pelo plugin do VS Code
+        width: double.infinity,
+
+*** REVISAR
+
  
  __________________________________________________
 Aula 5 - Navegação, MediaQuery, Trabalhando com Cores e plugins úteis do VSCode
@@ -112,4 +144,4 @@ CONCLUÍDO:
 
 *** FIM ***
 --------------------------------------
- 
+
